@@ -40,3 +40,9 @@ Output:
 +---------+
 Explanation: a@b.com is repeated two times.
 
+Solution:-
+
+SQL query with group by clause and having condition through we can get all the duplicate emails.
+
+Select email from Person group by (email) having(count(*))>1
+
